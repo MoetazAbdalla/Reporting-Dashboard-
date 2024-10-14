@@ -1,0 +1,22 @@
+@media print {
+    /* Shrink the content to fit on one page */
+    body {
+        zoom: 0.7; /* Adjust this value if content is still too big or small */
+    }
+
+    /* Ensure that charts and other elements don't break between pages */
+    .row {
+        page-break-inside: avoid;
+    }
+
+    /* Set the size to A4 for better printing */
+    @page {
+        size: A4;
+        margin: 10mm;
+    }
+
+    /* Hide the print button when printing */
+    #download-pdf {
+        display: none;
+    }
+}
